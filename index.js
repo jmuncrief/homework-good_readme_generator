@@ -10,9 +10,9 @@ async function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     let data = prompts();
-    let md = await generateMarkdown(data);
+    let md = generateMarkdown(data);
     writeToFile("Test Title", md, function(err){
-        console.log("Done?")
+        console.log("Complete.")
     });
 
 }

@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
 
-async function prompts() {
+function prompts() {
     return (
-        inquirer.prompt([
+       inquirer.prompt([
             {
                 type: "input",
                 message: "What is your project title?",
